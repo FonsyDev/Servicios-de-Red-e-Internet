@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Red e Internet (ASIR)</title>
+    <style>
+        :root {
+            /* Paleta Verde Esmeralda */
+            --primary: #059669;          /* Esmeralda principal */
+            --primary-hover: #047857;    /* Esmeralda oscuro */
+            --bg: #f0fdf4;               /* Fondo verde muy claro/fresco */
+            --card-bg: #ffffff;
+            --text-main: #064e3b;        /* Texto principal en verde muy oscuro */
+            --text-muted: #374151;       /* Texto secundario gris oscuro */
+            --border: #d1fae5;          /* Borde verde suave */
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #a7f3d0;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--text-main);
+            margin-bottom: 6px;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .subtitle {
+            color: var(--primary-hover);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .teacher-info {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .unit-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .unit-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(5, 150, 105, 0.12);
+            border-color: var(--primary);
+        }
+
+        .unit-info h2 {
+            margin: 0 0 8px 0;
+            font-size: 1.25rem;
+            color: var(--text-main);
+        }
+
+        .unit-info p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .btn-link {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            transition: background-color 0.2s;
+        }
+
+        .btn-link:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .unit-card.disabled {
+            opacity: 0.6;
+            pointer-events: none;
+            border-style: dashed;
+            background-color: #fafafa;
+        }
+
+        .badge-soon {
+            background: #e5e7eb;
+            color: #6b7280;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Servicios de Red e Internet</h1>
+        <div class="meta-info">
+            <p class="subtitle">Administración de Sistemas Informáticos en Red</p>
+            <p class="teacher-info">Profesor: Alfonso Amor Camacho</p>
+        </div>
+    </header>
+
+    <main class="grid">
+        <!-- Unidad 1 -->
+        <div class="unit-card">
+            <div class="unit-info">
+                <h2>Unidad 1: Servicios de Configuración Automática en la Red</h2>
+                <p>Introducción a la asignación dinámica de IP, arquitectura cliente-servidor y protocolo DHCP.</p>
+            </div>
+            <a href="SRI-1/" class="btn-link">Ver Presentación →</a>
+        </div>
+
+        <!-- Unidad 2 -->
+        <div class="unit-card disabled">
+            <div class="unit-info">
+                <h2>Unidad 2: Servicios de Transferencia de Archivos en la Red</h2>
+                <p>Protocolos FTP/SFTP, gestión de usuarios, permisos y configuración de servidores de archivos.</p>
+            </div>
+            <span class="badge-soon">En desarrollo</span>
+        </div>
+
+        <!-- Unidad 3 -->
+        <div class="unit-card disabled">
+            <div class="unit-info">
+                <h2>Unidad 3: Servidores Web</h2>
+                <p>Servidores HTTP/HTTPS (Apache/Nginx), hosts virtuales, certificados SSL/TLS y módulos.</p>
+            </div>
+            <span class="badge-soon">En desarrollo</span>
+        </div>
+
+        <!-- Unidad 4 -->
+        <div class="unit-card disabled">
+            <div class="unit-info">
+                <h2>Unidad 4: Servicio de Nombres en la Red</h2>
+                <p>Resolución de nombres (DNS), zonas directas/inversas, registros de recursos y servidores maestro/esclavo.</p>
+            </div>
+            <span class="badge-soon">En desarrollo</span>
+        </div>
+
+        <!-- Unidad 5 -->
+        <div class="unit-card disabled">
+            <div class="unit-info">
+                <h2>Unidad 5: Servidores de Correo Electrónico en la Red</h2>
+                <p>Protocolos SMTP, POP3 e IMAP, agentes de transporte/entrega y filtros antispam.</p>
+            </div>
+            <span class="badge-soon">En desarrollo</span>
+        </div>
+
+        <!-- Unidad 6 -->
+        <div class="unit-card disabled">
+            <div class="unit-info">
+                <h2>Unidad 6: Mensajería, Noticias y Listas de Distribución</h2>
+                <p>Servicios de mensajería instantánea, protocolo XMPP/IRC y gestión de listas de correo.</p>
+            </div>
+            <span class="badge-soon">En desarrollo</span>
+        </div>
+
+        <!-- Unidad 7 -->
+        <div class="unit-card disabled">
+            <div class="unit-info">
+                <h2>Unidad 7: Servicios de Audio en la Red</h2>
+                <p>Streaming de audio, protocolos de emisión y servidores de radio/podcast en red.</p>
+            </div>
+            <span class="badge-soon">En desarrollo</span>
+        </div>
+
+        <!-- Unidad 8 -->
+        <div class="unit-card disabled">
+            <div class="unit-info">
+                <h2>Unidad 8: Servicios de Vídeo y Videoconferencia en la Red</h2>
+                <p>Transmisión de vídeo en directo/bajo demanda, VoIP, protocolos SIP/RTP y videoconferencia.</p>
+            </div>
+            <span class="badge-soon">En desarrollo</span>
+        </div>
+    </main>
+
+</body>
+</html>
