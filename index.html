@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios de Red e Internet (ASIR)</title>
+    <title>Servicios de Red e Internet</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛜</text></svg>">
     <style>
         :root {
             /* Paleta Verde Esmeralda */
@@ -104,6 +105,9 @@
             font-size: 0.9rem;
             white-space: nowrap;
             transition: background-color 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
 
         .btn-link:hover {
@@ -125,6 +129,16 @@
             font-size: 0.85rem;
             font-weight: 600;
         }
+
+        .btn-link .arrow {
+            font-size: 1.2rem;
+            line-height: 1;
+            transition: transform 0.2s ease;
+        }
+
+        .btn-link:hover .arrow {
+            transform: translateX(3px);
+        }
     </style>
 </head>
 <body>
@@ -142,72 +156,72 @@
         <div class="unit-card">
             <div class="unit-info">
                 <h2>Unidad 1: Servicios de Configuración Automática en la Red</h2>
-                <p>Introducción a la asignación dinámica de IP, arquitectura cliente-servidor y protocolo DHCP.</p>
+                <p>Fundamentos de DHCP y SLAAC, asignación de IP e instalación práctica del servidor</p>
             </div>
-            <a href="SRI-1/" class="btn-link">Ver Presentación →</a>
+            <a href="SRI-1/" class="btn-link">Apuntes <span class="arrow">→</span></a>
         </div>
 
         <!-- Unidad 2 -->
         <div class="unit-card disabled">
             <div class="unit-info">
                 <h2>Unidad 2: Servicios de Transferencia de Archivos en la Red</h2>
-                <p>Protocolos FTP/SFTP, gestión de usuarios, permisos y configuración de servidores de archivos.</p>
+                <p>Transferencia segura con FTP y SFTP, modos de conexión y gestión del servidor</p>
             </div>
-            <span class="badge-soon">En desarrollo</span>
+            <span class="badge-soon">Próximamente</span>
         </div>
 
         <!-- Unidad 3 -->
         <div class="unit-card disabled">
             <div class="unit-info">
-                <h2>Unidad 3: Servidores Web</h2>
-                <p>Servidores HTTP/HTTPS (Apache/Nginx), hosts virtuales, certificados SSL/TLS y módulos.</p>
+                <h2>Unidad 3: Administración de Servidores Web y Sitios HTTPS</h2>
+                <p>Despliegue de servidores web, sitios virtuales, módulos y seguridad con SSL y TLS</p>
             </div>
-            <span class="badge-soon">En desarrollo</span>
+            <span class="badge-soon">Próximamente</span>
         </div>
 
         <!-- Unidad 4 -->
         <div class="unit-card disabled">
             <div class="unit-info">
-                <h2>Unidad 4: Servicio de Nombres en la Red</h2>
-                <p>Resolución de nombres (DNS), zonas directas/inversas, registros de recursos y servidores maestro/esclavo.</p>
+                <h2>Unidad 4: Arquitectura y Servicios DNS, Zonas y Registros</h2>
+                <p>Arquitectura DNS, servidores raíz, zonas primarias, registros de recursos y DDNS</p>
             </div>
-            <span class="badge-soon">En desarrollo</span>
+            <span class="badge-soon">Próximamente</span>
         </div>
 
         <!-- Unidad 5 -->
         <div class="unit-card disabled">
             <div class="unit-info">
                 <h2>Unidad 5: Servidores de Correo Electrónico en la Red</h2>
-                <p>Protocolos SMTP, POP3 e IMAP, agentes de transporte/entrega y filtros antispam.</p>
+                <p>Protocolos SMTP, IMAP y POP3, gestión de buzones y seguridad con firma y cifrado</p>
             </div>
-            <span class="badge-soon">En desarrollo</span>
+            <span class="badge-soon">Próximamente</span>
         </div>
 
         <!-- Unidad 6 -->
         <div class="unit-card disabled">
             <div class="unit-info">
                 <h2>Unidad 6: Mensajería, Noticias y Listas de Distribución</h2>
-                <p>Servicios de mensajería instantánea, protocolo XMPP/IRC y gestión de listas de correo.</p>
+                <p>Mensajería instantánea, clientes, servicios de noticias y listas de distribución</p>
             </div>
-            <span class="badge-soon">En desarrollo</span>
+            <span class="badge-soon">Próximamente</span>
         </div>
 
         <!-- Unidad 7 -->
         <div class="unit-card disabled">
             <div class="unit-info">
-                <h2>Unidad 7: Servicios de Audio en la Red</h2>
-                <p>Streaming de audio, protocolos de emisión y servidores de radio/podcast en red.</p>
+                <h2>Unidad 7: Servicios de Audio, Streaming, Servidores y RSS</h2>
+                <p>Audio digital, protocolos de streaming, servidores de emisión y podcasting RSS</p>
             </div>
-            <span class="badge-soon">En desarrollo</span>
+            <span class="badge-soon">Próximamente</span>
         </div>
 
         <!-- Unidad 8 -->
         <div class="unit-card disabled">
             <div class="unit-info">
                 <h2>Unidad 8: Servicios de Vídeo y Videoconferencia en la Red</h2>
-                <p>Transmisión de vídeo en directo/bajo demanda, VoIP, protocolos SIP/RTP y videoconferencia.</p>
+                <p>Vídeo digital, códecs, servidores de emisión, suscripciones y videoconferencias</p>
             </div>
-            <span class="badge-soon">En desarrollo</span>
+            <span class="badge-soon">Próximamente</span>
         </div>
     </main>
 
